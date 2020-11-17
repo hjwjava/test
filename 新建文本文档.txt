@@ -1,0 +1,36 @@
+
+insert into SYS_ROLE_MENU (role_id, menu_id) values  ('1','5');
+insert into SYS_ROLE_MENU (role_id, menu_id) values  ('1','6');
+insert into SYS_ROLE_MENU (role_id, menu_id) values  ('1','7');
+
+insert into SYS_ROLE_MENU (role_id, menu_id) values  ('1','8');
+insert into SYS_ROLE_MENU (role_id, menu_id) values  ('1','9');
+insert into SYS_ROLE_MENU (role_id, menu_id) values  ('1','10');
+
+
+insert into SYS_MENU
+    (ID, PARENT_ID, NAME, SORT, HREF, TARGET, TYPE, ICON, IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, REMARKS)
+    values (SYS_MENU_SEQ.nextval,'10034','BOP涉外收入','999','/cc/cc11','','2','','1','cc:cc11','superadmin','','','','');
+
+
+insert into SYS_MENU
+(ID, PARENT_ID, NAME, SORT, HREF, TARGET, TYPE, ICON, IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, REMARKS)
+values (SYS_MENU_SEQ.nextval,'10034','BOP境外汇款','998','/cc/cc12','','3','','1','cc:cc12','superadmin','','','','');
+
+
+insert into SYS_MENU
+(ID, PARENT_ID, NAME, SORT, HREF, TARGET, TYPE, ICON, IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, REMARKS)
+values (SYS_MENU_SEQ.nextval,'10034','BOP单位基本情况表','997','/cc/cc13','','4','','1','cc:cc13','superadmin','','','','');
+
+insert into SYS_MENU
+(ID, PARENT_ID, NAME, SORT, HREF, TARGET, TYPE, ICON, IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, REMARKS)
+values (SYS_MENU_SEQ.nextval,'10034','结售汇报表','996','/cc/cc14','','5','','1','cc:cc14','superadmin','','','','');
+
+
+insert into SYS_MENU
+(ID, PARENT_ID, NAME, SORT, HREF, TARGET, TYPE, ICON, IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, REMARKS)
+values (SYS_MENU_SEQ.nextval,'1041','退款列表','995','/cc/cc15','','2','','1','cc:cc15','superadmin','','','','');
+
+insert into SYS_MENU
+(ID, PARENT_ID, NAME, SORT, HREF, TARGET, TYPE, ICON, IS_SHOW, PERMISSION, CREATE_BY, CREATE_DATE, UPDATE_BY, UPDATE_DATE, REMARKS)
+values (SYS_MENU_SEQ.nextval,'10006','内部报表','994','/cc/cc16','','2','','1','cc:cc16','superadmin','','','','');
