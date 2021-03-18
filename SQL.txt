@@ -1,0 +1,30 @@
+alter table CMS_PAYMENT_INFORMATION rename column RECONCILIATION_STATUS to BOP_STATUS
+/
+
+comment on column CMS_PAYMENT_INFORMATION.BOP_STATUS is '是否可以发送BOP'
+/
+
+alter table CMS_PAYMENT_INFORMATION
+	add PROJECT_X_STATUS varchar2(10)
+/
+
+comment on column CMS_PAYMENT_INFORMATION.PROJECT_X_STATUS is '结售汇是否可以发送'
+/
+
+
+alter table CMS_REFUND_INFORMATION rename column RECONCILIATION_MARK to BOP_STATUS
+/
+
+comment on column CMS_REFUND_INFORMATION.BOP_STATUS is 'BOP标记'
+/
+
+alter table CMS_REFUND_INFORMATION
+	add PROJECT_X_STATUS varchar2(10)
+/
+
+comment on column CMS_REFUND_INFORMATION.PROJECT_X_STATUS is '结售汇标记'
+/
+
+alter table CMS_REFUND_INFORMATION drop column RECONCILIATION_DATE
+/
+
